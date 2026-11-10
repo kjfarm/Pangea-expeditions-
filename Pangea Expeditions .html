@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pangea Expeditions | Private Hunting Guide Service – Any Hunt. Anywhere.</title>
+<meta name="description" content="Pangea Expeditions is a private hunting guide service offering personalized guided elk, mule deer and big game hunts. Any hunt. Anywhere. Text your guide at 385-306-4106.">
+<meta name="keywords" content="hunting guide, guided elk hunts, guided mule deer hunts, hunting outfitter, private guide service, big game hunting">
+<meta property="og:title" content="Pangea Expeditions – Any Hunt. Anywhere.">
+<meta property="og:description" content="Private hunting guide service. Personalized guided elk, mule deer and big game hunts.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="hero.jpg">
+<meta name="theme-color" content="#1c1d1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Rokkitt:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Pangea Expeditions","description":"Private hunting guide service. Any hunt. Anywhere.","telephone":"+1-385-306-4106","slogan":"Any Hunt. Anywhere."}
+</script>
+<style>
+:root{
+  --charcoal:#1c1d1b; --char2:#262723; --green:#2b3a2a; --green2:#36483a;
+  --tan:#b8945f; --tan2:#d2b383; --cream:#f1e9d8; --cream2:#e6dcc6;
+  --earth:#6d5b45; --ink:#2a2824; --muted:#6f685c;
+  --head:'Rokkitt',Georgia,serif; --brand:'Holtwood One SC',Georgia,serif;
+  --body:'Source Sans 3',-apple-system,Segoe UI,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.hdr.solid{background:rgba(28,29,27,.96);box-shadow:0 1px 0 rgba(184,148,95,.35)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--cream)}
+.logo svg{width:34px;height:34px}
+.logo b{font-family:var(--brand);font-weight:400;font-size:17px;letter-spacing:.04em;line-height:1}
+.logo small{display:block;font-family:var(--head);font-size:10.5px;letter-spacing:.28em;color:var(--tan2);margin-top:3px}
+.nav{display:flex;gap:26px}
+.nav a{font-family:var(--head);font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--cream);opacity:.9}
+.nav a:hover{color:var(--tan2)}
+.menu-btn{display:none;background:none;border:1px solid rgba(241,233,216,.4);color:var(--cream);width:44px;height:40px;border-radius:3px;cursor:pointer}
+.menu-btn span{display:block;width:20px;height:2px;background:currentColor;margin:4px auto}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav{position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:rgba(28,29,27,.98);padding:8px 0 18px;transform:translateY(-130%);transition:transform .3s}
+  .nav.open{transform:none}
+  .nav a{padding:14px 24px;font-size:17px;border-bottom:1px solid rgba(255,255,255,.06)}
+}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;font-size:17px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 28px;border-radius:2px;border:2px solid var(--tan);cursor:pointer;transition:.2s;min-height:56px}
+.btn-solid{background:var(--tan);color:var(--charcoal)}
+.btn-solid:hover{background:var(--tan2);border-color:var(--tan2)}
+.btn-line{background:rgba(28,29,27,.35);color:var(--cream);border-color:var(--cream)}
+.btn-line:hover{background:var(--cream);color:var(--charcoal)}
+.btn-green{background:var(--green);border-color:var(--green);color:var(--cream)}
+.btn-green:hover{background:var(--green2)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;color:var(--cream);overflow:hidden;background:var(--charcoal)}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:drift 24s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,18,.55) 0%,rgba(20,20,18,.25) 40%,rgba(20,20,18,.75) 100%)}
+.hero-in{position:relative;z-index:2;padding:110px 20px 80px}
+.crest{width:74px;height:74px;margin:0 auto 18px;opacity:.95}
+.hero h1{font-family:var(--brand);font-weight:400;font-size:clamp(38px,10vw,96px);line-height:.98;letter-spacing:.02em;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px auto 14px;color:var(--tan2)}
+.rule i{height:1px;width:clamp(40px,12vw,120px);background:currentColor}
+.rule em{width:7px;height:7px;background:currentColor;transform:rotate(45deg)}
+.tagline{font-family:var(--head);font-weight:800;font-size:clamp(22px,5.4vw,40px);letter-spacing:.2em}
+.sub{font-family:var(--head);font-weight:500;font-size:clamp(14px,3.4vw,18px);letter-spacing:.42em;color:var(--tan2);margin-top:8px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px}
+@media (max-width:560px){.hero .ctas .btn{width:100%}}
+.scroll-cue{position:absolute;z-index:2;bottom:22px;left:50%;transform:translateX(-50%);font-family:var(--head);font-size:12px;letter-spacing:.3em;opacity:.7;text-decoration:none}
+
+/* ---------- section basics ---------- */
+section{padding:84px 0}
+.eyebrow{font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.32em;text-transform:uppercase;color:var(--earth)}
+.h2{font-family:var(--head);font-weight:800;font-size:clamp(32px,6vw,52px);line-height:1.05;text-transform:uppercase;letter-spacing:.03em;margin:8px 0 14px;color:var(--charcoal)}
+.lead{max-width:640px;color:var(--muted);font-size:18px}
+.head-c{text-align:center}.head-c .lead{margin-inline:auto}
+.dark{background:var(--charcoal);color:var(--cream)}
+.dark .h2{color:var(--cream)}.dark .eyebrow{color:var(--tan)}.dark .lead{color:#bfb6a3}
+.greenbg{background:var(--green);color:var(--cream)}
+.greenbg .h2{color:var(--cream)}.greenbg .eyebrow{color:var(--tan2)}.greenbg .lead{color:#cbc8b4}
+.ph{background:rgba(184,148,95,.18);border-bottom:1px dashed var(--tan);padding:0 3px;font-style:normal}
+.dark .ph,.greenbg .ph{background:rgba(184,148,95,.2)}
+
+/* sample tag shown on placeholder images */
+.sample{position:relative}
+.sample::before{content:"SAMPLE IMAGE";position:absolute;z-index:3;top:10px;left:10px;font:700 10px/1 var(--body);letter-spacing:.18em;padding:5px 7px;background:rgba(28,29,27,.72);color:var(--cream2);border:1px solid rgba(241,233,216,.25);pointer-events:none}
+.hero.sample::before{top:auto;bottom:60px;left:16px}
+
+/* ---------- pillars strip ---------- */
+.pillars{background:var(--green);color:var(--cream);padding:0}
+.pillars .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.pillar{padding:30px 20px;text-align:center;border-right:1px solid rgba(241,233,216,.12)}
+.pillar:last-child{border:0}
+.pillar h3{font-family:var(--head);font-weight:800;letter-spacing:.16em;font-size:17px;text-transform:uppercase;color:var(--tan2)}
+.pillar p{font-size:15px;color:#d3cfbd;margin-top:4px}
+@media (max-width:700px){.pillars .wrap{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid rgba(241,233,216,.12)}}
+
+/* ---------- hunt cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px;margin-top:44px}
+.card{background:#fbf7ee;border:1px solid var(--cream2);box-shadow:0 10px 30px -18px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.card .img{aspect-ratio:4/3;overflow:hidden;background:var(--char2)}
+.card .img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .img img{transform:scale(1.04)}
+.card .body{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column}
+.card h3{font-family:var(--head);font-weight:800;font-size:26px;text-transform:uppercase;letter-spacing:.04em;color:var(--charcoal)}
+.card .desc{color:var(--muted);font-size:16px;margin:6px 0 16px}
+.facts{list-style:none;border-top:1px solid var(--cream2);margin-bottom:20px}
+.facts li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--cream2);font-size:15px}
+.facts b{flex:0 0 92px;font-family:var(--head);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--earth);padding-top:2px}
+.card .btn{margin-top:auto;font-size:15px;padding:13px 18px;min-height:50px}
+
+/* ---------- gallery ---------- */
+.filters{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;margin:30px 0 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filters::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;border:1px solid rgba(241,233,216,.3);background:transparent;color:var(--cream2);border-radius:2px;cursor:pointer}
+.chip.on{background:var(--tan);border-color:var(--tan);color:var(--charcoal)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;grid-auto-flow:dense}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr);gap:12px}}
+@media (min-width:1100px){.grid{grid-template-columns:repeat(4,1fr)}}
+.tile{position:relative;aspect-ratio:1;overflow:hidden;background:var(--char2);cursor:zoom-in;border:0;padding:0;color:inherit;text-align:left}
+.tile.wide{grid-column:span 2;aspect-ratio:2/1}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s,opacity .4s}
+@media (min-width:760px){.tile.wide{aspect-ratio:auto;min-height:220px}}
+.tile:hover img{transform:scale(1.05)}
+.tile .cap{position:absolute;inset:auto 0 0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:14px;font-weight:600;color:var(--cream)}
+.tile .cap small{display:block;font-family:var(--head);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--tan2)}
+.gal-note{margin-top:22px;font-size:14px;color:#a59c89;text-align:center}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,12,11,.95);display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px}
+.lb.open{display:flex}
+.lb img{max-height:78vh;max-width:100%;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb p{color:var(--cream2);margin-top:14px;text-align:center;font-size:15px}
+.lb button{position:absolute;background:rgba(241,233,216,.1);border:1px solid rgba(241,233,216,.25);color:var(--cream);width:48px;height:48px;font-size:24px;cursor:pointer;border-radius:2px}
+.lb .x{top:16px;right:16px}.lb .prev{left:12px;top:50%}.lb .next{right:12px;top:50%}
+
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+@media (max-width:880px){.about{grid-template-columns:1fr;gap:34px}}
+.portrait{position:relative}
+.portrait .frame{aspect-ratio:4/5;overflow:hidden;background:var(--char2);border:1px solid var(--tan)}
+.portrait .frame img{width:100%;height:100%;object-fit:cover}
+.portrait::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--tan);z-index:-1}
+.about h3{font-family:var(--head);font-weight:800;font-size:20px;letter-spacing:.12em;text-transform:uppercase;margin:26px 0 6px;color:var(--charcoal)}
+.about p{color:#4b463d}
+.diff{list-style:none;display:grid;gap:14px;margin-top:14px}
+.diff li{display:flex;gap:14px;align-items:flex-start}
+.diff svg{flex:0 0 26px;margin-top:2px;color:var(--earth)}
+.diff b{display:block;font-family:var(--head);font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--charcoal)}
+.diff span{font-size:16px;color:#5a544a}
+
+/* ---------- testimonials ---------- */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:44px}
+.tcard{background:rgba(241,233,216,.06);border:1px dashed rgba(184,148,95,.55);padding:28px 24px;position:relative}
+.tcard .q{font-family:var(--brand);font-size:54px;line-height:.6;color:var(--tan);opacity:.6}
+.tcard .stars{color:var(--tan);letter-spacing:4px;font-size:15px;margin:12px 0 8px;opacity:.5}
+.tcard blockquote{font-size:17px;color:#d7d1c1;font-style:italic;margin-bottom:20px}
+.who{display:flex;align-items:center;gap:12px}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--green2);border:1px solid var(--tan);display:grid;place-items:center;color:var(--tan2);font-family:var(--head);font-size:11px;letter-spacing:.1em;overflow:hidden}
+.who b{display:block;font-family:var(--head);letter-spacing:.1em;text-transform:uppercase;font-size:15px;color:var(--cream)}
+.who small{color:#a59c89;font-size:14px}
+.badge{position:absolute;top:12px;right:12px;font:700 10px/1 var(--body);letter-spacing:.16em;padding:5px 7px;border:1px solid rgba(184,148,95,.6);color:var(--tan2)}
+
+/* ---------- contact ---------- */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:36px}}
+.textbox{background:var(--charcoal);color:var(--cream);padding:34px 28px;border-top:4px solid var(--tan)}
+.textbox h3{font-family:var(--head);font-weight:800;font-size:28px;letter-spacing:.06em;text-transform:uppercase}
+.textbox p{color:#c9c1ae;margin:8px 0 22px}
+.btn-text{width:100%;font-size:21px;padding:20px;min-height:68px}
+.btn-call{width:100%;margin-top:12px}
+.phone-big{display:block;text-align:center;margin-top:18px;font-family:var(--head);font-weight:800;font-size:30px;letter-spacing:.08em;color:var(--tan2);text-decoration:none}
+.textbox .note{font-size:13px;color:#8f8879;margin:14px 0 0;text-align:center}
+form{background:#fbf7ee;border:1px solid var(--cream2);padding:30px 24px;box-shadow:0 10px 30px -20px rgba(0,0,0,.4)}
+form h3{font-family:var(--head);font-weight:800;font-size:28px;letter-spacing:.06em;text-transform:uppercase;color:var(--charcoal);margin-bottom:4px}
+form .intro{color:var(--muted);font-size:15px;margin-bottom:20px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.row{grid-template-columns:1fr}}
+.field{margin-bottom:14px}
+label{display:block;font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--earth);margin-bottom:6px}
+label .req{color:#8a4b2a}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #cfc3a9;background:#fff;color:var(--ink);border-radius:2px;-webkit-appearance:none;appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--earth) 50%),linear-gradient(135deg,var(--earth) 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px;background-repeat:no-repeat;padding-right:36px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--tan);outline-offset:0;border-color:var(--tan)}
+textarea{min-height:120px;resize:vertical}
+.submit{width:100%;margin-top:6px}
+.msg{display:none;margin-top:16px;padding:14px 16px;font-size:15px;border-left:4px solid var(--tan);background:#f3ead6}
+.msg.show{display:block}
+.msg.ok{border-color:#4f6b45;background:#e7eedf}
+.msg .btn{margin-top:12px;width:100%;font-size:15px;min-height:48px;padding:12px}
+.hp{position:absolute;left:-9999px}
+
+/* ---------- footer ---------- */
+footer{background:#141513;color:#b9b19f;padding:60px 0 28px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px}
+@media (max-width:760px){.fgrid{grid-template-columns:1fr}}
+footer h4{font-family:var(--head);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:14px;color:var(--tan2);margin-bottom:12px}
+footer a{text-decoration:none}footer a:hover{color:var(--cream)}
+footer ul{list-style:none;display:grid;gap:6px}
+.social{display:flex;gap:10px;margin-top:14px}
+.social a{width:44px;height:44px;border:1px solid rgba(184,148,95,.45);display:grid;place-items:center;border-radius:2px}
+.social svg{width:20px;height:20px;fill:currentColor}
+.legal{border-top:1px solid rgba(255,255,255,.07);margin-top:40px;padding-top:20px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:13px;color:#7d776a}
+
+/* sticky text button on phones */
+.sticky{position:fixed;z-index:40;left:12px;right:12px;bottom:12px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+@media (max-width:700px){.sticky.show{display:flex}}
+</style>
+</head>
+<body>
+
+<!--
+=====================================================================
+  HOW TO EDIT THIS WEBSITE (plain-English guide)
+  - All your business info, hunts, gallery captions and reviews are
+    in the "SETTINGS" section near the bottom of this file
+    (search for the word SETTINGS).
+  - Photos: upload a photo with one of these exact names and it
+    replaces the sample image automatically:
+        hero.jpg        = big photo at the top of the page
+        guide.jpg       = your photo in "About the Guide"
+        hunt-1.jpg, hunt-2.jpg, hunt-3.jpg  = hunt cards
+        gallery-1.jpg ... gallery-60.jpg    = photo gallery
+        review-1.jpg, review-2.jpg, review-3.jpg = client photos
+=====================================================================
+-->
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Pangea Expeditions home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#b8945f" stroke-width="2"/><path d="M8 44 L22 24 L29 33 L38 18 L56 44 Z" fill="#b8945f"/><path d="M38 18 L42 24 L39 23 L36 26 Z" fill="#f1e9d8"/><path d="M8 44 H56" stroke="#b8945f" stroke-width="2"/></svg>
+      <span><b>PANGEA EXPEDITIONS</b><small>ANY HUNT. ANYWHERE.</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#hunts">Hunts</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#guide">The Guide</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" style="padding:0">
+  <img class="bg" data-photo="hero" data-scene="ember,11" alt="Mountain hunting country at first light" fetchpriority="high">
+  <div class="hero-in">
+    <svg class="crest" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#d2b383" stroke-width="1.5"/><circle cx="32" cy="32" r="25" fill="none" stroke="#d2b383" stroke-width=".8" opacity=".6"/><path d="M11 43 L23 26 L29 34 L38 19 L53 43 Z" fill="#d2b383"/><path d="M38 19 L42 25 L39 24 L36 27 Z" fill="#f1e9d8"/></svg>
+    <h1>PANGEA<br>EXPEDITIONS</h1>
+    <div class="rule"><i></i><em></em><i></i></div>
+    <p class="tagline">ANY HUNT. ANYWHERE.</p>
+    <p class="sub">PRIVATE GUIDE SERVICE</p>
+    <div class="ctas">
+      <a class="btn btn-solid" href="#hunts">View Our Hunts</a>
+      <a class="btn btn-line" href="#contact">Contact Your Guide</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#hunts">SCROLL ▾</a>
+</section>
+
+<div class="pillars">
+  <div class="wrap">
+    <div class="pillar"><h3>Private Guiding</h3><p>Hunts built around you and your party</p></div>
+    <div class="pillar"><h3>Personalized Plans</h3><p>Your species, your weapon, your pace</p></div>
+    <div class="pillar"><h3>Direct Contact</h3><p>Talk straight to your guide — no call centers</p></div>
+  </div>
+</div>
+
+<!-- ============ HUNTS & DESTINATIONS ============ -->
+<section id="hunts">
+  <div class="wrap">
+    <div class="head-c">
+      <p class="eyebrow">Hunt Locations &amp; Destinations</p>
+      <h2 class="h2">Our Hunts</h2>
+      <p class="lead">Every hunt is planned one-on-one with your guide. Reach out for current availability, seasons and pricing.</p>
+    </div>
+    <div class="cards" id="huntCards"></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="dark" id="gallery">
+  <div class="wrap">
+    <div class="head-c">
+      <p class="eyebrow">From the Field</p>
+      <h2 class="h2">Hunt Gallery</h2>
+      <p class="lead">Hunters, harvests, high country and the moments in between.</p>
+    </div>
+    <div class="filters" id="filters" role="tablist"></div>
+    <div class="grid" id="grid"></div>
+    <p class="gal-note" id="galNote"></p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="guide">
+  <div class="wrap about">
+    <div class="portrait">
+      <div class="frame"><img data-photo="guide" data-scene="forest,7" alt="Your Pangea Expeditions hunting guide" loading="lazy"></div>
+    </div>
+    <div>
+      <p class="eyebrow">About the Guide</p>
+      <h2 class="h2">Meet Your Guide</h2>
+      <p id="aboutIntro"></p>
+      <h3>Background &amp; Experience</h3>
+      <p id="aboutBackground"></p>
+      <h3>Hunting Philosophy</h3>
+      <p id="aboutPhilosophy"></p>
+      <h3>What Makes Pangea Different</h3>
+      <ul class="diff" id="diffList"></ul>
+      <a class="btn btn-green" href="#contact" style="margin-top:28px">Plan Your Hunt</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="greenbg" id="reviews">
+  <div class="wrap">
+    <div class="head-c">
+      <p class="eyebrow">Client Testimonials</p>
+      <h2 class="h2">From Our Hunters</h2>
+      <p class="lead">Real words from real clients.</p>
+    </div>
+    <div class="tgrid" id="tgrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="head-c" style="margin-bottom:40px">
+      <p class="eyebrow">Contact &amp; Hunt Inquiry</p>
+      <h2 class="h2">Start Planning Your Hunt</h2>
+      <p class="lead">The fastest way to reach your guide is a text message. Prefer to write it all out? Use the inquiry form.</p>
+    </div>
+    <div class="contact">
+      <div class="textbox">
+        <h3>Text Your Guide</h3>
+        <p>Tap below and a message opens on your phone, ready to send.</p>
+        <a class="btn btn-solid btn-text sms-link" href="#">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg>
+          Text the Guide
+        </a>
+        <a class="btn btn-line btn-call tel-link" href="#">Call the Guide</a>
+        <a class="phone-big tel-link phone-text" href="#"></a>
+        <p class="note">Texting works from any mobile phone. On a computer, just text or call the number above.</p>
+      </div>
+
+      <form id="inq" novalidate>
+        <h3>Hunt Inquiry</h3>
+        <p class="intro">Tell us about the hunt you have in mind and your guide will follow up personally.</p>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field"><label for="f-name">Full Name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="row">
+          <div class="field"><label for="f-phone">Phone Number <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+          <div class="field"><label for="f-email">Email Address <span class="req">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+        </div>
+        <div class="field"><label for="f-hunt">Hunt of Interest</label>
+          <select id="f-hunt" name="hunt_of_interest"><option value="">Select a hunt…</option></select></div>
+        <div class="row">
+          <div class="field"><label for="f-loc">Preferred Location</label><input id="f-loc" name="preferred_location" placeholder="State, region or open to ideas"></div>
+          <div class="field"><label for="f-season">Preferred Season</label>
+            <select id="f-season" name="preferred_season">
+              <option value="">Select a season…</option>
+              <option>Archery</option><option>Muzzleloader</option><option>Rifle</option>
+              <option>Late Season</option><option>Spring</option><option>Not sure yet</option>
+            </select></div>
+        </div>
+        <div class="field"><label for="f-q">Questions or Additional Information</label><textarea id="f-q" name="message" placeholder="Group size, experience level, dates, goals…"></textarea></div>
+        <button class="btn btn-green submit" type="submit" id="submitBtn">Submit Inquiry</button>
+        <div class="msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#top"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#b8945f" stroke-width="2"/><path d="M8 44 L22 24 L29 33 L38 18 L56 44 Z" fill="#b8945f"/><path d="M8 44 H56" stroke="#b8945f" stroke-width="2"/></svg><span><b>PANGEA EXPEDITIONS</b><small>ANY HUNT. ANYWHERE.</small></span></a>
+        <p style="margin-top:14px;max-width:320px">Private Guide Service. Personalized guided hunts planned directly with your guide.</p>
+        <div class="social" id="social"></div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="tel-link phone-text" href="#"></a></li>
+          <li><a class="sms-link" href="#">Send a Text</a></li>
+          <li id="footEmail"></li>
+          <li id="footArea"></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#hunts">Hunts &amp; Destinations</a></li>
+          <li><a href="#gallery">Hunt Gallery</a></li>
+          <li><a href="#guide">About the Guide</a></li>
+          <li><a href="#reviews">Testimonials</a></li>
+          <li><a href="#contact">Hunt Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><span>© <span id="yr"></span> Pangea Expeditions. All rights reserved.</span><span>Any Hunt. Anywhere.</span></div>
+  </div>
+</footer>
+
+<a class="btn btn-solid sticky sms-link" id="sticky" href="#">Text the Guide</a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" id="lbX" aria-label="Close">×</button>
+  <button class="prev" id="lbP" aria-label="Previous photo">‹</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <button class="next" id="lbN" aria-label="Next photo">›</button>
+</div>
+
+<script>
+/* =====================================================================
+   SETTINGS  —  Edit the text between the quote marks "like this".
+   Anything inside [square brackets] is a placeholder for you to replace.
+   ===================================================================== */
+const SETTINGS = {
+
+  phone: "385-306-4106",
+  textMessage: "Hi! I'm interested in learning more about guided hunts with Pangea Expeditions.",
+  email: "",              // e.g. "guide@pangeaexpeditions.com"  (leave "" to hide)
+  serviceArea: "",        // e.g. "Based in Utah – guiding throughout the West"
+
+  // Paste your Formspree form ID here, e.g. "xyzabcde". Until you do,
+  // the form will NOT send and will offer to text instead.
+  formspreeID: "",
+
+  // Paste your page links. Leave "" to show a placeholder icon.
+  social: { facebook: "", instagram: "", youtube: "", tiktok: "" },
+
+  // ---------- HUNT CARDS (photos: hunt-1.jpg, hunt-2.jpg, hunt-3.jpg) ----------
+  hunts: [
+    { title: "Guided Elk Hunts", scene: "dusk,21",
+      description: "[Short description of your elk hunts — terrain, camp style, what a typical day looks like.]",
+      location: "[Location / unit]", species: "Elk", type: "[Archery / Muzzleloader / Rifle]",
+      season: "[Season dates]", info: "[Group size, lodging, physical demands, etc.]" },
+    { title: "Guided Mule Deer Hunts", scene: "dawn,34",
+      description: "[Short description of your mule deer hunts — country, glassing, spot-and-stalk, etc.]",
+      location: "[Location / unit]", species: "Mule Deer", type: "[Archery / Muzzleloader / Rifle]",
+      season: "[Season dates]", info: "[Group size, lodging, physical demands, etc.]" },
+    { title: "Other Guided Adventures", scene: "alpine,48",
+      description: "[Describe any other species or custom hunts you offer.]",
+      location: "[Location]", species: "[Species]", type: "[Hunt type]",
+      season: "[Season dates]", info: "[Additional information]" }
+  ],
+
+  // ---------- GALLERY (photos: gallery-1.jpg, gallery-2.jpg, ...) ----------
+  // Upload gallery-10.jpg, gallery-11.jpg, etc. and they appear automatically.
+  // Categories: elk, muley, other, harvest, scenery, camp
+  gallery: [
+    { caption: "[Elk hunt photo caption]",            category: "elk",     scene: "dusk,3",    wide: true },
+    { caption: "[Mule deer hunt photo caption]",      category: "muley",   scene: "dawn,5" },
+    { caption: "[Hunter & harvest caption]",          category: "harvest", scene: "ember,8" },
+    { caption: "[Mountain scenery caption]",          category: "scenery", scene: "alpine,13" },
+    { caption: "[Behind the scenes / camp caption]",  category: "camp",    scene: "forest,17" },
+    { caption: "[Elk country caption]",               category: "elk",     scene: "forest,22" },
+    { caption: "[Glassing for mule deer caption]",    category: "muley",   scene: "dusk,27",   wide: true },
+    { caption: "[Other guided hunt caption]",         category: "other",   scene: "dawn,31" },
+    { caption: "[High country sunrise caption]",      category: "scenery", scene: "ember,39" }
+  ],
+
+  // ---------- ABOUT THE GUIDE (photo: guide.jpg) ----------
+  aboutIntro: "[Guide name] founded Pangea Expeditions to give hunters a private, personal guided experience. [One or two sentences introducing yourself.]",
+  aboutBackground: "[Where you grew up hunting, how many years you've guided, species and regions you know best, certifications or licenses you hold.]",
+  aboutPhilosophy: "[Your approach — e.g. ethics, fair chase, respect for the land and animals, how you work with hunters of different experience levels.]",
+  differences: [
+    ["Private, Personal Service", "[You deal directly with your guide from first call to final pack-out.]"],
+    ["Hunts Built Around You", "[Every plan is shaped around your goals, skill level and schedule.]"],
+    ["Any Hunt. Anywhere.", "[Describe the range of hunts and places you can help with.]"],
+    ["[Your Difference]", "[Another thing that sets Pangea Expeditions apart.]"]
+  ],
+
+  // ---------- TESTIMONIALS (photos: review-1.jpg, review-2.jpg, review-3.jpg) ----------
+  // Replace with REAL client reviews only. Set placeholder: false once real.
+  reviews: [
+    { quote: "[Client testimonial goes here. Paste a real review from a past client.]", name: "[Client Name]", hunt: "[Hunt type & year]", placeholder: true },
+    { quote: "[Client testimonial goes here. Paste a real review from a past client.]", name: "[Client Name]", hunt: "[Hunt type & year]", placeholder: true },
+    { quote: "[Client testimonial goes here. Paste a real review from a past client.]", name: "[Client Name]", hunt: "[Hunt type & year]", placeholder: true }
+  ]
+};
+/* ===================== END OF SETTINGS ===================== */
+
+
+const CATS = {all:"All", elk:"Elk", muley:"Mule Deer", other:"Other Hunts", harvest:"Harvests", scenery:"Scenery", camp:"Behind the Scenes"};
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ph = s => esc(s).replace(/\[([^\]]+)\]/g, '<em class="ph">[$1]</em>');
+
+/* ---------- placeholder landscape generator (used until real photos are uploaded) ---------- */
+const PAL = {
+  dusk:  {sky:['#d8b98c','#8f6c4c','#3a3631'], r:['#9a8669','#75654f','#504739','#33302a','#1b1c19'], sun:'#f3e2bd'},
+  dawn:  {sky:['#ece2cb','#c5b494','#7b7867'], r:['#aaa48f','#83806c','#5d5e4f','#3c4136','#212620'], sun:'#fbf4e1'},
+  forest:{sky:['#cdcfbc','#8f9884','#525d4e'], r:['#828d78','#616d59','#44513f','#2d392b','#192219'], sun:null},
+  alpine:{sky:['#e3e4dc','#adb2a3','#6c7266'], r:['#c3c3b9','#8d9083','#5f6558','#3a4236','#1f251d'], sun:'#f6f3e9'},
+  ember: {sky:['#d39a62','#7d4c31','#272120'], r:['#80604a','#5c4536','#3e322a','#28221e','#131210'], sun:'#f3cb92'}
+};
+function rnd(seed){ let s = seed % 2147483647 || 7; return () => (s = s * 16807 % 2147483647) / 2147483647; }
+function scene(spec){
+  const [name, sd] = (spec || 'dusk,1').split(','), p = PAL[name] || PAL.dusk, R = rnd(+sd * 9973 + 17);
+  const W = 1600, H = 1000; let o = '';
+  o += `<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${p.sky[2]}"/><stop offset=".55" stop-color="${p.sky[1]}"/><stop offset="1" stop-color="${p.sky[0]}"/></linearGradient>`;
+  o += `<radialGradient id="g"><stop offset="0" stop-color="${p.sun||'#fff'}" stop-opacity=".9"/><stop offset=".25" stop-color="${p.sun||'#fff'}" stop-opacity=".35"/><stop offset="1" stop-color="${p.sun||'#fff'}" stop-opacity="0"/></radialGradient>`;
+  o += `<linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${p.sky[0]}" stop-opacity="0"/><stop offset="1" stop-color="${p.sky[0]}" stop-opacity=".55"/></linearGradient>`;
+  o += `<filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>`;
+  o += `<rect width="${W}" height="${H}" fill="url(#s)"/>`;
+  if (p.sun){ const sx = 300 + R()*1000, sy = 330 + R()*120; o += `<circle cx="${sx}" cy="${sy}" r="420" fill="url(#g)"/><circle cx="${sx}" cy="${sy}" r="46" fill="${p.sun}" opacity=".85"/>`; }
+  for (let i = 0; i < 5; i++){
+    const base = 430 + i*120 + R()*30, amp = [230,170,120,80,55][i], n = 129;
+    let pts = new Array(n).fill(0); pts[0] = (R()-.5)*amp; pts[n-1] = (R()-.5)*amp;
+    (function md(a,b,r){ if (b-a < 2) return; const m = (a+b)>>1; pts[m] = (pts[a]+pts[b])/2 + (R()-.5)*r; md(a,m,r*.58); md(m,b,r*.58); })(0,n-1,amp*2.2);
+    let d = `M0 ${H}`; const ys = [];
+    pts.forEach((v,k) => { const x = k*W/(n-1), y = base + v; ys.push([x,y]); d += ` L${x.toFixed(1)} ${y.toFixed(1)}`; });
+    d += ` L${W} ${H}Z`;
+    o += `<path d="${d}" fill="${p.r[i]}"/>`;
+    if (i >= 2){
+      let t = '';
+      for (let x = 0; x < W; x += (i===4 ? 9 : 14) + R()*18){
+        const k = Math.min(n-1, Math.round(x/W*(n-1))), y = ys[k][1] + 4, h = (i===4?38:20) + R()*(i===4?70:30), w = h*.26;
+        t += `M${x.toFixed(0)} ${(y-h).toFixed(0)}L${(x-w).toFixed(0)} ${y.toFixed(0)}L${(x+w).toFixed(0)} ${y.toFixed(0)}Z`;
+      }
+      o += `<path d="${t}" fill="${p.r[i]}"/>`;
+    }
+    if (i < 4) o += `<rect y="${base-40}" width="${W}" height="${amp+160}" fill="url(#f)" opacity="${.9-i*.15}"/>`;
+  }
+  o += `<rect width="${W}" height="${H}" filter="url(#n)" opacity=".07"/>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">${o}</svg>`);
+}
+
+/* ---------- photo loader: tries your uploaded file first, otherwise shows a sample ---------- */
+const EXTS = ['jpg','jpeg','JPG','JPEG','png','webp'];
+function findPhoto(base){
+  return new Promise(res => {
+    let i = 0; const t = new Image();
+    t.onload = () => res(t.src);
+    t.onerror = () => (++i < EXTS.length) ? (t.src = base + '.' + EXTS[i]) : res(null);
+    t.src = base + '.' + EXTS[0];
+  });
+}
+function applyPhoto(img, base, sceneSpec, holder){
+  findPhoto(base).then(src => {
+    if (src){ img.src = src; holder && holder.classList.remove('sample'); }
+    else { img.src = scene(sceneSpec); holder && holder.classList.add('sample'); }
+  });
+}
+
+/* ---------- build page from SETTINGS ---------- */
+const S = SETTINGS, digits = S.phone.replace(/\D/g,''), intl = '+1' + digits.slice(-10);
+const isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+const smsHref = `sms:${intl}${isApple ? '&' : '?'}body=${encodeURIComponent(S.textMessage)}`;
+$$('.sms-link').forEach(a => a.href = smsHref);
+$$('.tel-link').forEach(a => a.href = 'tel:' + intl);
+$$('.phone-text').forEach(a => a.textContent = S.phone);
+if (S.email) $('#footEmail').innerHTML = `<a href="mailto:${esc(S.email)}">${esc(S.email)}</a>`;
+$('#footArea').innerHTML = S.serviceArea ? esc(S.serviceArea) : ph('[Your service area]');
+$('#yr').textContent = new Date().getFullYear();
+
+// hero + guide photos
+applyPhoto($('#hero .bg'), 'hero', $('#hero .bg').dataset.scene, $('#hero'));
+applyPhoto($('#guide img'), 'guide', 'forest,7', $('#guide .frame'));
+
+// hunt cards
+const hs = $('#f-hunt');
+$('#huntCards').innerHTML = S.hunts.map((h,i) => `
+  <article class="card">
+    <div class="img"><img id="hunt-${i+1}" alt="${esc(h.title)}" loading="lazy"></div>
+    <div class="body">
+      <h3>${ph(h.title)}</h3>
+      <p class="desc">${ph(h.description)}</p>
+      <ul class="facts">
+        <li><b>Location</b><span>${ph(h.location)}</span></li>
+        <li><b>Species</b><span>${ph(h.species)}</span></li>
+        <li><b>Hunt Type</b><span>${ph(h.type)}</span></li>
+        <li><b>Season</b><span>${ph(h.season)}</span></li>
+        <li><b>Details</b><span>${ph(h.info)}</span></li>
+      </ul>
+      <a class="btn btn-green" href="#contact" data-hunt="${esc(h.title)}">Inquire About This Hunt</a>
+    </div>
+  </article>`).join('');
+S.hunts.forEach((h,i) => {
+  applyPhoto($('#hunt-'+(i+1)), 'hunt-'+(i+1), h.scene, $('#hunt-'+(i+1)).parentNode);
+  hs.insertAdjacentHTML('beforeend', `<option>${esc(h.title)}</option>`);
+});
+hs.insertAdjacentHTML('beforeend', '<option>Custom / Not sure yet</option>');
+$$('[data-hunt]').forEach(a => a.addEventListener('click', () => { hs.value = a.dataset.hunt; }));
+
+// gallery
+let gal = [], cur = 'all', lbIdx = 0, shown = [];
+function tile(item, i){
+  const b = document.createElement('button');
+  b.className = 'tile' + (item.wide ? ' wide' : ''); b.dataset.cat = item.category || 'other';
+  b.innerHTML = `<img alt="${esc(item.caption.replace(/[\[\]]/g,''))}" loading="lazy"><span class="cap"><small>${CATS[item.category]||'Gallery'}</small>${esc(item.caption)}</span>`;
+  b.addEventListener('click', () => openLb(shown.indexOf(b)));
+  return b;
+}
+const grid = $('#grid');
+S.gallery.forEach((g,i) => {
+  const t = tile(g, i); grid.appendChild(t); gal.push(t);
+  applyPhoto(t.querySelector('img'), 'gallery-'+(i+1), g.scene, t);
+});
+// auto-add any extra uploaded photos: gallery-10, gallery-11, ...
+(async function more(n){
+  const src = await findPhoto('gallery-' + n);
+  if (!src || n > 60) return;
+  const t = tile({caption:'', category:'other'}); t.querySelector('img').src = src;
+  t.querySelector('.cap').remove(); t.dataset.cat = 'all-only';
+  grid.appendChild(t); gal.push(t); filter(cur); more(n+1);
+})(S.gallery.length + 1);
+
+$('#filters').innerHTML = Object.entries(CATS).map(([k,v]) => `<button class="chip${k==='all'?' on':''}" data-f="${k}" role="tab">${v}</button>`).join('');
+$$('.chip').forEach(c => c.addEventListener('click', () => { $$('.chip').forEach(x => x.classList.remove('on')); c.classList.add('on'); filter(c.dataset.f); }));
+function filter(f){
+  cur = f;
+  gal.forEach(t => t.style.display = (f === 'all' || t.dataset.cat === f) ? '' : 'none');
+  shown = gal.filter(t => t.style.display !== 'none');
+}
+filter('all');
+
+// lightbox
+const lb = $('#lb');
+function openLb(i){ lbIdx = i; showLb(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+function showLb(){ const t = shown[lbIdx]; $('#lbImg').src = t.querySelector('img').src; $('#lbCap').textContent = t.querySelector('.cap') ? t.querySelector('.cap').lastChild.textContent : ''; }
+function closeLb(){ lb.classList.remove('open'); document.body.style.overflow = ''; }
+$('#lbX').onclick = closeLb;
+$('#lbP').onclick = () => { lbIdx = (lbIdx - 1 + shown.length) % shown.length; showLb(); };
+$('#lbN').onclick = () => { lbIdx = (lbIdx + 1) % shown.length; showLb(); };
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => { if (!lb.classList.contains('open')) return; if (e.key==='Escape') closeLb(); if (e.key==='ArrowRight') $('#lbN').click(); if (e.key==='ArrowLeft') $('#lbP').click(); });
+let tx = 0; lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive:true});
+lb.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) (dx < 0 ? $('#lbN') : $('#lbP')).click(); });
+
+// about
+$('#aboutIntro').innerHTML = ph(S.aboutIntro);
+$('#aboutBackground').innerHTML = ph(S.aboutBackground);
+$('#aboutPhilosophy').innerHTML = ph(S.aboutPhilosophy);
+$('#diffList').innerHTML = S.differences.map(([t,d]) => `<li><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20 L9 10 L13 15 L16 9 L21 20 Z"/></svg><div><b>${ph(t)}</b><span>${ph(d)}</span></div></li>`).join('');
+
+// reviews
+$('#tgrid').innerHTML = S.reviews.map((r,i) => `
+  <figure class="tcard">${r.placeholder ? '<span class="badge">PLACEHOLDER</span>' : ''}
+    <div class="q">“</div><div class="stars">★★★★★</div>
+    <blockquote>${ph(r.quote)}</blockquote>
+    <figcaption class="who"><div class="avatar" id="rv-${i+1}">PHOTO</div><div><b>${ph(r.name)}</b><small>${ph(r.hunt)}</small></div></figcaption>
+  </figure>`).join('');
+S.reviews.forEach((r,i) => findPhoto('review-'+(i+1)).then(src => { if (src) $('#rv-'+(i+1)).innerHTML = `<img src="${src}" alt="" style="width:100%;height:100%;object-fit:cover">`; }));
+
+// social
+const ICON = {
+  facebook:'<path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v10h4V14h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/>',
+  instagram:'<path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>',
+  youtube:'<path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .6 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-4.8 31 31 0 0 0-.4-4.8zM9.7 15.1V8.9L15.5 12z"/>',
+  tiktok:'<path d="M16.6 2h-3.4v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V8.9a6.4 6.4 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.4 1.4V6.6a4.6 4.6 0 0 1-4.4-4.6z"/>'
+};
+$('#social').innerHTML = Object.keys(ICON).map(k => {
+  const url = S.social[k];
+  return `<a href="${url ? esc(url) : '#contact'}" ${url ? 'target="_blank" rel="noopener"' : ''} aria-label="${k}${url ? '' : ' (link coming soon)'}" title="${url ? k : k + ' – add your link in SETTINGS'}"><svg viewBox="0 0 24 24">${ICON[k]}</svg></a>`;
+}).join('');
+
+/* ---------- inquiry form ---------- */
+const form = $('#inq'), msg = $('#formMsg'), btn = $('#submitBtn');
+function show(html, ok){ msg.innerHTML = html; msg.className = 'msg show' + (ok ? ' ok' : ''); msg.scrollIntoView({behavior:'smooth', block:'nearest'}); }
+function textInstead(){
+  const d = new FormData(form), lines = [S.textMessage, '', 'Name: ' + d.get('name')];
+  [['Hunt','hunt_of_interest'],['Location','preferred_location'],['Season','preferred_season'],['Email','email'],['Notes','message']].forEach(([l,k]) => d.get(k) && lines.push(l + ': ' + d.get(k)));
+  return `sms:${intl}${isApple ? '&' : '?'}body=${encodeURIComponent(lines.join('\n'))}`;
+}
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const bad = [...form.querySelectorAll('[required]')].find(f => !f.value.trim() || (f.type === 'email' && !/^\S+@\S+\.\S+$/.test(f.value)));
+  if (bad){ bad.focus(); show('Please fill in your name, phone number and a valid email address.'); return; }
+  if (!S.formspreeID){
+    show(`<b>The online form isn't connected yet.</b> Your inquiry was <b>not</b> sent. Please text the guide your details instead:<a class="btn btn-solid" href="${textInstead()}">Send These Details by Text</a>`);
+    return;
+  }
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    const r = await fetch('https://formspree.io/f/' + S.formspreeID, { method:'POST', body:new FormData(form), headers:{Accept:'application/json'} });
+    if (!r.ok) throw 0;
+    form.reset();
+    show('<b>Thank you — your inquiry was sent.</b> Your guide will be in touch soon. For a faster reply, feel free to text ' + esc(S.phone) + '.', true);
+  } catch(_) {
+    show(`<b>Sorry, your inquiry could not be sent right now.</b> Please text the guide instead:<a class="btn btn-solid" href="${textInstead()}">Send These Details by Text</a>`);
+  }
+  btn.disabled = false; btn.textContent = 'Submit Inquiry';
+});
+
+/* ---------- header, menu, sticky button ---------- */
+const hdr = $('#hdr'), nav = $('#nav'), mb = $('#menuBtn'), sticky = $('#sticky');
+function onScroll(){
+  const y = scrollY, h = innerHeight;
+  hdr.classList.toggle('solid', y > 40 || nav.classList.contains('open'));
+  const c = $('#contact').getBoundingClientRect();
+  sticky.classList.toggle('show', y > h * .8 && !(c.top < h && c.bottom > 0));
+}
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+mb.addEventListener('click', () => { const o = nav.classList.toggle('open'); mb.setAttribute('aria-expanded', o); onScroll(); });
+$$('.nav a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); mb.setAttribute('aria-expanded', false); }));
+</script>
+</body>
+</html>
